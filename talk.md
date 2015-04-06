@@ -3,6 +3,10 @@
 
 #### Karol Wozniak, 2015
 
+----
+
+*Less Code == More Software*
+
 ====
 
 ### outline
@@ -24,7 +28,6 @@
 #### continuous integration
 
  - [travis-ci](https://travis-ci.org/)
- - [drone.io](https://drone.io/)
 
 ----
 
@@ -33,14 +36,14 @@
 
  - [gh-pages](https://pages.github.com/)
  - [sphinx](http://sphinx-doc.org)
+ - [readthedocs](https://readthedocs.org/)
 
 ----
 
 ### tools
-#### project documentation
+#### programming blogs
 
  - [jekyll](http://jekyllrb.com/)
- - [readthedocs](https://readthedocs.org/)
  - [disqus](dhttps://disqus.com/)
 
 ----
@@ -54,7 +57,7 @@
 ====
 
 ### FOSS
-#### free ppen source software
+#### free open source software
 
 [OpenHub](https://www.openhub.net/)
 
@@ -82,6 +85,7 @@ https://github.com
  - [Electronic Arts](https://github.com/electronicarts)
  - [Adobe](https://github.com/adobe)
  - [Nokia Networks](https://github.com/nokia-wroclaw)
+ - many others...
 
 ----
 
@@ -112,6 +116,12 @@ https://github.com
 
 ----
 
+### what else...?
+
+ - French [Civil Code](https://github.com/steeve/france.code-civil)
+ - Polish [2014 electoral system source](https://github.com/wybory2014/Kalkulator1)
+
+----
 ### luxoft at github
 
 https://github.com/Luxoft
@@ -227,6 +237,14 @@ $ git push -u gitolite master
 $ cd ~/workspace/
 $ git clone gitolite@hostname:newrepo.git
 ```
+
+----
+
+### advantages
+
+- free
+- simple configuration
+- ssh key authorization
 
 ====
 
@@ -345,12 +363,6 @@ env:
 - reliable
 - simple configuration
 - configuration in repo
-
-====
-
-### drone.io
-
-https://drone.io/
 
 ====
 
