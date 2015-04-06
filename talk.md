@@ -366,6 +366,59 @@ env:
 
 ====
 
+### gh-pages
+
+https://pages.github.com/
+
+Project website hosted by GitHub
+
+----
+
+### account website
+
+1. create repo called `username.github.io`
+2. push something
+    ```
+    $ git clone git@github.com:\
+      >  ${USERNAME}/${USERNAME}.github.io.git
+    $ cd ${USERNAME}.github.io
+    $ echo "hello world" > index.html
+    $ git commit -a -m "User website"
+    $ git push -u origin master
+    ```
+3. open `http://username.github.io/`
+
+----
+
+### repo website
+
+1. create branch called `gh-pages`
+    ```
+    $ git branch gh-pages
+    $ git checkout gh-pages
+    ```
+2. write something
+    ```
+    $ echo "hello world" > index.html
+    ```
+3. push it to GitHub
+    ```
+    $ git commit -a -m "Repo website"
+    $ git push -u origin gh-pages
+    ```
+
+----
+
+### examples
+
+ - [this talk](http://attugit.github.io/lunch_and_learn_talk/)
+ - Google [protobuf](https://google.github.io/protobuf/)
+ - Facebook [react](http://facebook.github.io/react/)
+ - Facebook [rocksdb](https://facebook.github.io/rocksdb/)
+ - [Microsoft](http://microsoft.github.io/) on GitHub
+
+====
+
 ## other
 
 https://github.com/ripienaar/free-for-dev
