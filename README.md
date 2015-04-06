@@ -10,4 +10,6 @@ $ npm install
 $ grunt serve &
 ```
 
-open http://localhost:8000
+http://localhost:8000
+
+### go to [gh-pages](http://attugit.github.io/lunch_and_learn_talk)
