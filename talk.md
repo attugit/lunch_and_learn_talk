@@ -5,7 +5,7 @@
 
 ====
 
-### Outline
+### outline
  - repository hosting
  - continuous integration
  - project documentation
@@ -13,14 +13,14 @@
 
 ----
 
-### Tools
+### tools
 #### repository hosting
  - [github](https://github.com/)
  - [gitolite](https://github.com/sitaramc/gitolite)
 
 ----
 
-### Tools
+### tools
 #### continuous integration
 
  - [travis-ci](https://travis-ci.org/)
@@ -28,7 +28,7 @@
 
 ----
 
-### Tools
+### tools
 #### project documentation
 
  - [gh-pages](https://pages.github.com/)
@@ -36,7 +36,7 @@
 
 ----
 
-### Tools
+### tools
 #### project documentation
 
  - [jekyll](http://jekyllrb.com/)
@@ -45,26 +45,26 @@
 
 ----
 
-### Tools
-#### bonus: C++ build tools
+### tools
+#### bonus: c++ build tools
 
  - [premake](http://premake.github.io)
  - [waf](https://github.com/waf-project/waf)
 
 ====
 
-###FOSS
-#### Free Open Source Software
+### FOSS
+#### free ppen source software
 
 [OpenHub](https://www.openhub.net/)
 
 ====
 
-### GitHub
+### github
 
 https://github.com
 
-### No limits
+### no limits
 
  - free public repos
  - collaborators
@@ -72,7 +72,7 @@ https://github.com
 
 ----
 
-### Companies 
+### organizations
 
  - [Google](https://github.com/google)
  - [Facebook](https://github.com/facebook)
@@ -85,7 +85,7 @@ https://github.com
 
 ----
 
-### Projects & Mirros
+### projects & mirros
 
  - [bootstrap](https://github.com/twbs/bootstrap)
  - [Ruby on Rails](https://github.com/rails/rails)
@@ -99,7 +99,7 @@ https://github.com
 
 ----
 
-### More...
+### more...
 
  - [linux](https://github.com/torvalds/linux)
  - [git](https://github.com/git/git)
@@ -112,13 +112,13 @@ https://github.com
 
 ----
 
-### Luxoft at github
+### luxoft at github
 
 https://github.com/Luxoft
 
 ----
 
-### Twister
+### twister
 
 http://www.twistertesting.com
 
@@ -126,7 +126,7 @@ https://github.com/Luxoft/Twister
 
 ----
 
-### Me on github
+### me on github
 
 https://github.com/attugit
 
@@ -135,7 +135,7 @@ https://github.com/attugit
 
 ----
 
-### Creating repository
+### creating repository
 
 New
 ```
@@ -152,7 +152,7 @@ $ git push -u origin master
 
 ----
 
-### Advantages
+### advantages
 
 - free
 - community
@@ -326,7 +326,18 @@ env:
 
 ----
 
-### Advantages
+### live
+
+- [build history](https://travis-ci.org/attugit/archie/builds)
+
+---
+
+- [protobuf](https://travis-ci.org/google/protobuf)
+- [TypeScript](https://travis-ci.org/Microsoft/TypeScript)
+
+----
+
+### advantages
 
 - free
 - community
