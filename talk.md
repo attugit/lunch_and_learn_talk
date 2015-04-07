@@ -67,6 +67,8 @@
 
 https://github.com
 
+![](./assets/GitHub-Mark-Light-120px-plus.png)
+
 ### no limits
 
  - free public repos
@@ -254,6 +256,8 @@ https://travis-ci.org
 
 https://github.com/travis-ci
 
+![](./assets/travis-mascot-200px.png)
+
 ----
 
 ### single configuration file
@@ -419,6 +423,13 @@ Project website hosted by GitHub
 
 ====
 
-## other
+### other
 
 https://github.com/ripienaar/free-for-dev
+
+----
+
+### more...
+
+ - http://tomjohnson1492.github.io/innovation
+ - http://github-service-universe.kimminich.de
