@@ -5,7 +5,7 @@
 
 ----
 
-*Less Code == More Software*
+### *Less Code == More Software*
 
 ====
 
@@ -108,7 +108,7 @@ https://github.com
  - [gcc](https://github.com/gcc-mirror/gcc)
  - [clang](https://github.com/llvm-mirror/clang)
  - [boost](https://github.com/boostorg)
- - [C++ standard](https://github.com/cplusplus)
+ - [ISO C++](https://github.com/cplusplus)
  - [CppCon](https://github.com/CppCon)
 
 ----
@@ -163,14 +163,14 @@ $ git push -u origin master
 
 ### advantages
 
-- free
-- community
-- ssh key authorization
-- integration
-  - issues
-  - pull requests
-  - gh-pages
-  - more...
+ - free
+ - community
+ - ssh key authorization
+ - integration
+   - issues
+   - pull requests
+   - gh-pages
+   - more...
 
 ====
 
@@ -241,17 +241,17 @@ $ git clone gitolite@hostname:newrepo.git
 
 ### advantages
 
-- free
-- simple configuration
-- ssh key authorization
+ - free
+ - simple configuration
+ - ssh key authorization
 
 ----
 
 ### other
 
-- [Bitbucket](https://bitbucket.org/)
-- [GitLab](https://about.gitlab.com/)
-- [Bluemix](https://hub.jazz.net/)
+ - [Bitbucket](https://bitbucket.org/)
+ - [GitLab](https://about.gitlab.com/)
+ - [Bluemix](https://hub.jazz.net/)
 
 ====
 
@@ -355,23 +355,20 @@ env:
 
 ### live
 
-- [build history](https://travis-ci.org/attugit/archie/builds)
-
----
-
-- [protobuf](https://travis-ci.org/google/protobuf)
-- [TypeScript](https://travis-ci.org/Microsoft/TypeScript)
+ - my [library](https://travis-ci.org/attugit/archie/builds)
+ - Google [protobuf](https://travis-ci.org/google/protobuf)
+ - MS [TypeScript](https://travis-ci.org/Microsoft/TypeScript)
 
 ----
 
 ### advantages
 
-- free
-- community
-- fast
-- reliable
-- simple configuration
-- configuration in repo
+ - free
+ - community
+ - fast
+ - reliable
+ - simple configuration
+ - configuration in repo
 
 ====
 
@@ -425,6 +422,113 @@ Project website hosted by GitHub
  - Facebook [react](http://facebook.github.io/react/)
  - Facebook [rocksdb](https://facebook.github.io/rocksdb/)
  - [Microsoft](http://microsoft.github.io/) on GitHub
+
+----
+
+### advantages
+
+ - free
+ - automated
+ - flexible
+ - under VC
+
+====
+
+### Sphinx
+
+![](./assets/sphinx-header.png)
+
+----
+
+### examples
+
+ - [python](https://docs.python.org/3/)
+ - [pip](https://pip.pypa.io/en/latest/)
+ - [cython](http://docs.cython.org/)
+ - [numpy](http://docs.scipy.org/doc/numpy/reference/)
+ - [pyre](http://docs.danse.us/pyre/sphinx/)
+ - [OpenCV](http://docs.opencv.org/)
+ - [jinja](http://jinja.pocoo.org/docs/dev/)
+ - [Spring Python](http://docs.spring.io/spring-python/1.2.x/sphinx/html/)
+ - [django](https://docs.djangoproject.com/en/1.8/)
+
+----
+
+### setup
+
+```
+$ sphinx-quickstart ./doc
+$ tree doc
+  .
+  |-- _build
+  |-- _static
+  |-- _templates
+  |-- conf.py
+  |-- index.rst
+  |-- make.bat
+  `-- Makefile
+
+  3 directories, 4 files
+```
+
+----
+
+### minimal configuration
+
+```
+$ cat doc/conf.py
+  import sys
+  import os
+
+  templates_path = ['_templates']
+  source_suffix = '.rst'
+  master_doc = 'index'
+  project = u'libby'
+  copyright = u'2015, Dilbert'
+  version = '1.0'
+  release = '1'
+  exclude_patterns = ['_build']
+  pygments_style = 'sphinx'
+  html_theme = 'default'
+  html_static_path = ['_static']
+  htmlhelp_basename = 'libbydoc'
+```
+
+----
+
+### minimal content
+
+```
+$ cat doc/index.rst
+  Welcome to libbys's documentation!
+  ##################################
+
+  Contents:
+
+  .. toctree::
+     :maxdepth: 2
+
+  Indices and tables
+  ##################
+
+  * :ref:`genindex`
+  * :ref:`modindex`
+  * :ref:`search`
+```
+
+----
+
+### supported formats
+
+```
+$ make
+  changes     devhelp     doctest     gettext
+  html        info        latex       latexpdfja
+  man         pseudoxml   singlehtml  text
+  clean       dirhtml     epub        help
+  htmlhelp    json        latexpdf    linkcheck
+  pickle      qthelp      texinfo     xml
+```
 
 ====
 
