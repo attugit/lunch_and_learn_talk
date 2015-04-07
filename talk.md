@@ -146,6 +146,12 @@ https://github.com/attugit
 
 ### creating repository
 
+![](./assets/github_new_repo.png)
+
+----
+
+### creating repository
+
 New
 ```
 $ git clone git@github.com:attugit/newrepo.git
@@ -350,6 +356,18 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 ```
+
+----
+
+### build history
+
+![](./assets/travis_build_history.png)
+
+----
+
+### build history
+
+![](./assets/travis_current_build.png)
 
 ----
 
