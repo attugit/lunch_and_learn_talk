@@ -9,7 +9,7 @@
 
 ====
 
-### outline
+### Outline
  - repository hosting
  - continuous integration
  - project documentation
@@ -17,22 +17,19 @@
 
 ----
 
-### tools
-#### repository hosting
+### repository hosting
  - [github](https://github.com/)
  - [gitolite](https://github.com/sitaramc/gitolite)
 
 ----
 
-### tools
-#### continuous integration
+### continuous integration
 
  - [travis-ci](https://travis-ci.org/)
 
 ----
 
-### tools
-#### project documentation
+### project documentation
 
  - [gh-pages](https://pages.github.com/)
  - [sphinx](http://sphinx-doc.org)
@@ -40,16 +37,14 @@
 
 ----
 
-### tools
-#### programming blogs
+### programming blogs
 
  - [jekyll](http://jekyllrb.com/)
  - [disqus](dhttps://disqus.com/)
 
 ----
 
-### tools
-#### bonus: c++ build tools
+### bonus: C++ build tools
 
  - [premake](http://premake.github.io)
  - [waf](https://github.com/waf-project/waf)
@@ -57,13 +52,13 @@
 ====
 
 ### FOSS
-#### free open source software
+#### Free Open Source Software
 
 [OpenHub](https://www.openhub.net/)
 
 ====
 
-### github
+### GitHub
 
 https://github.com
 
@@ -124,13 +119,15 @@ https://github.com
  - Polish [2014 electoral system source](https://github.com/wybory2014/Kalkulator1)
 
 ----
-### luxoft at github
+### Luxoft at GitHub
 
 https://github.com/Luxoft
 
+![](./assets/luxoft_logo.png)
+
 ----
 
-### twister
+### Twister
 
 http://www.twistertesting.com
 
@@ -138,12 +135,12 @@ https://github.com/Luxoft/Twister
 
 ----
 
-### me on github
+### me on GitHub
 
 https://github.com/attugit
 
 [This talk](http://attugit.github.io/lunch_and_learn_talk)
-/[src](https://github.com/attugit/lunch_and_learn_talk)
+/ [src](https://github.com/attugit/lunch_and_learn_talk)
 
 ----
 
@@ -177,7 +174,7 @@ $ git push -u origin master
 
 ====
 
-### gitolite
+### Gitolite
 
 http://gitolite.com
 
@@ -247,6 +244,14 @@ $ git clone gitolite@hostname:newrepo.git
 - free
 - simple configuration
 - ssh key authorization
+
+----
+
+### other
+
+- [Bitbucket](https://bitbucket.org/)
+- [GitLab](https://about.gitlab.com/)
+- [Bluemix](https://hub.jazz.net/)
 
 ====
 
