@@ -548,6 +548,33 @@ $ make
   pickle      qthelp      texinfo     xml
 ```
 
+----
+
+### source
+
+![](./assets/sphinx_src.png)
+
+----
+
+### html
+
+![](./assets/sphinx_html.png)
+
+----
+
+### pdf
+
+![](./assets/sphinx_pdf.png)
+
+----
+
+### advantages
+
+ - free
+ - simple configuration
+ - automated
+ - plain text
+
 ====
 
 ### other
