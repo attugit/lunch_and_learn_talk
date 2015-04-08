@@ -7,6 +7,13 @@
 
 ### *Less Code == More Software*
 
+----
+
+### FOSS
+#### Free Open Source Software
+
+[OpenHub](https://www.openhub.net/)
+
 ====
 
 ### Outline
@@ -39,7 +46,6 @@
 ### programming blogs
 
  - [jekyll](http://jekyllrb.com/)
- - [disqus](dhttps://disqus.com/)
 
 ----
 
@@ -47,13 +53,6 @@
 
  - [premake](http://premake.github.io)
  - [waf](https://github.com/waf-project/waf)
-
-====
-
-### FOSS
-#### Free Open Source Software
-
-[OpenHub](https://www.openhub.net/)
 
 ====
 
@@ -192,9 +191,9 @@ simple alternative
 ```
 $ tree gitolite-admin/
   gitolite-admin/
-  |-- conf
+  |-- conf/
   |   `-- gitolite.conf
-  `-- keydir
+  `-- keydir/
       |-- admin.pub
       |-- dilbert.pub
       |-- alice.pub
@@ -476,10 +475,10 @@ Project website hosted by GitHub
 ```
 $ sphinx-quickstart ./doc
 $ tree doc
-  .
-  |-- _build
-  |-- _static
-  |-- _templates
+  doc/
+  |-- _build/
+  |-- _static/
+  |-- _templates/
   |-- conf.py
   |-- index.rst
   |-- make.bat
@@ -646,7 +645,7 @@ $ cat _config.yml
  - features
  - disqus
  - RSS
- - deploy on gh-pages
+ - deploy with gh-pages
 
 ====
 
@@ -654,9 +653,114 @@ $ cat _config.yml
 
 https://github.com/ripienaar/free-for-dev
 
+====
+
+### bonus: premake4
+
+[industriousone](http://industriousone.com/premake-quick-start)
+
+![](./assets/premake-logo.png)
+
 ----
 
-### more...
+### project layout
 
- - http://tomjohnson1492.github.io/innovation
- - http://github-service-universe.kimminich.de
+```
+$ tree project/
+  project/
+  |-- premake4
+  |-- premake4.lua
+  |-- inc/
+  |   `-- include_me.h
+  `-- src/
+      |-- bin/
+      |   `-- main.cpp
+      `-- lib/
+          |-- build_me.cpp
+          |-- build_me_too.cpp
+          `-- internal.h
+
+  4 directories, 7 files
+```
+
+----
+
+### premake binary
+
+```
+$ stat --format="%A %s %n" project/premake4
+  -rwxr-xr-x 339952 project/premake4
+$ ldd project/premake4
+  linux-vdso.so.1 (0x00007ffe1bfa4000)
+  libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f779c23b000)
+  libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f779c037000)
+  libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f779bc8d000)
+  /lib64/ld-linux-x86-64.so.2 (0x00007f779c55c000)
+```
+
+----
+
+### configuration
+
+```
+$ cat project/premake4.lua
+  _ACTION = _ACTION or "gmake"
+
+  local workspace = solution "project"
+    location ( "build" )
+    targetdir ( "build" )
+    includedirs { "inc" }
+    configurations { "debug", "release" }
+    language "C++"
+    flags { "Cpp11", "ExtraWarnings", "FatalWarnings"}
+    configuration "release"
+      flags { "OptimizeSpeed" }
+    configuration "debug"
+      flags { "Symbols" }
+```
+
+---
+
+
+```
+  local lib = project "libby"
+    kind "SharedLib"
+    includedirs { "src" }
+    files { "src/lib/*.cpp" }
+
+  local app = project "app"
+    kind "ConsoleApp"
+    files { "src/bin/*.cpp" }
+    links { "libby" }
+```
+
+----
+
+### build
+
+```
+$ cd project/
+$ ./premake4
+  Building configurations...
+  Running action 'gmake'...
+  Generating build/Makefile...
+  Generating build/libby.make...
+  Generating build/app.make...
+  Done.
+```
+
+---
+
+```
+$ make config=release -C build/ -f Makefile
+```
+
+----
+
+### advantages
+
+ - free
+ - simple scripting
+ - small
+ - no dependecies
+ - embedded lua
