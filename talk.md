@@ -33,7 +33,6 @@
 
  - [gh-pages](https://pages.github.com/)
  - [sphinx](http://sphinx-doc.org)
- - [readthedocs](https://readthedocs.org/)
 
 ----
 
@@ -574,6 +573,80 @@ $ make
  - simple configuration
  - automated
  - plain text
+
+====
+
+### Jekyll
+
+http://jekyllrb.com
+
+![](./assets/jekyll-logo-dark-transparent.png)
+
+----
+
+### content
+
+Plain text: markdown, css.
+
+![](./assets/codig-session-src.png)
+
+----
+
+### static site
+
+![](./assets/codig-session-html.png)
+
+[Coding Session](http://attugit.github.io/)
+
+----
+
+### themes
+
+http://jekyllthemes.org/
+
+----
+
+### localhost
+
+```
+$ jekyll build --watch &
+$ jekyll serve
+  Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+```
+
+----
+
+### configuration
+
+```
+$ cat _config.yml
+  name: Coding Session
+  description: Simple blog about programming
+  url: http://attugit.github.io
+  baseurl: ''
+  github: 'attugit/archie'
+  gaaccount: 'XX-11111111-1'
+  disqus: ''
+  comments: true
+  permalink: /:year/:month/:title
+  paginate: 3
+  highlighter: pygments
+  markdown: redcarpet
+```
+
+----
+
+### advantages
+
+ - free
+ - plain text
+ - simple
+ - themes
+ - features
+ - disqus
+ - RSS
+ - deploy on gh-pages
 
 ====
 
