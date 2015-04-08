@@ -49,10 +49,9 @@
 
 ----
 
-### bonus: C++ build tools
+### bonus: C++ build tool
 
  - [premake](http://premake.github.io)
- - [waf](https://github.com/waf-project/waf)
 
 ====
 
